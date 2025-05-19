@@ -1,0 +1,37 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-logo {
+    width: 35%;
+    padding-bottom: 3px;
+}
+
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 22px;
+}
+
+.nav-link {
+   font-size: 22px; 
+   font-family: loto;
+   text-decoration: none;
+   color: black;
+   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.active {
+    color: #727D73;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #AAB99A;
+    cursor: pointer;
+}

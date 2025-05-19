@@ -1,0 +1,28 @@
+Homepage:
+~ Business Name
+~~ S&A Lawncare and Services LLC
+~ Contact info
+~~ 814-441-3179
+~~ salawncare31@gmail.com
+~ About us
+
+Gallery/Portfolio:
+~ Before and after photos
+~ Testimonials/Reviews
+
+Service Information:
+~ Provided Services
+~~ [Mowing, Edging, Mulch or Stone Installation, Weed Control, Leaf Removal, Hedge Trimming, Seasonal Cleanups, Leaf Raking/Removal, Dethatching, Flowers and Shrubs, Fertilization, Snow Removal, Garden Bed Cleanup, Flowerbed Installation and Removal (Bed Tear out and Site Restoration)]
+~ FAQs
+~~ [{q: "Do you offer one time services?", a: "Yes, whether you need a one time cleanup or regular weekly maintenance, we can create a plan that fits your needs"}, {q: "What areas do you serve?", a: "We currently serve Centre County, Clinton County and Mifflin County. If you are unsure if you are in our service area, feel free to reach out."}, {q:"",a:""}]
+
+Contact us Page:
+~ Sends an email to salawncare31@gmail.com
+~~ 1. Phone number
+~~ 2. Address
+~~ 3. Job Description
+
+Colors:
+https://colorhunt.co/palette/727d73aab99ad0ddd0f0f0d7
+
+

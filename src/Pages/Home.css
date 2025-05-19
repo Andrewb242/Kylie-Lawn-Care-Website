@@ -1,0 +1,26 @@
+.home-about-contact-container {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-about-container {
+    width: 68%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2)
+}
+
+.home-logo-contact-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2)
+}
+
+.home-contact-container {
+}
+
+.home-logo {
+    width: 100%;
+    aspect-ratio: 1;
+}

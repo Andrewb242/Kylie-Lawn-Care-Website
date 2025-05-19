@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import Home from './Pages/Home';
+import Gallery from './Pages/Gallery';
+import Service from './Pages/Service';
+import Contact from './Pages/Contact';
 
 function App() {
+  const queryParams = new URLSearchParams(window.location.search);
+  const page = queryParams.get('page') || 'home';
+
+  let Content;
+  switch (page) {
+    case 'gallery':
+      Content = Gallery;
+      break;
+    case 'service':
+      Content = Service;
+      break;
+    case 'contact':
+      Content = Contact;
+      break;
+    default:
+      Content = Home;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar page={page} />
+      <main>
+        <Content />
+      </main>
+
+    </>
   );
 }
 
