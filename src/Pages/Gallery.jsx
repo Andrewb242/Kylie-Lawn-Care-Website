@@ -3,30 +3,29 @@ import "./Gallery.css";
 
 const photos = [
   {
-    before: "https://via.placeholder.com/300x200?text=Before+1",
-    after: "https://via.placeholder.com/300x200?text=After+1",
+    before: "https://picsum.photos/500",
+    after: "https://picsum.photos/500?random=1",
   },
   {
-    before: "https://via.placeholder.com/300x200?text=Before+2",
-    after: "https://via.placeholder.com/300x200?text=After+2",
+    before: "https://picsum.photos/500?random=2",
+    after: "https://picsum.photos/500?random=3",
   },
   {
-    before: "https://via.placeholder.com/300x200?text=Before+3",
-    after: "https://via.placeholder.com/300x200?text=After+3",
+    before: "https://picsum.photos/500?random=4",
+    after: "https://picsum.photos/500?random=5",
   },
   {
-    before: "https://via.placeholder.com/300x200?text=Before+4",
-    after: "https://via.placeholder.com/300x200?text=After+4",
+    before: "https://picsum.photos/500?random=6",
+    after: "https://picsum.photos/500?random=7",
   },
   {
-    before: "https://via.placeholder.com/300x200?text=Before+5",
-    after: "https://via.placeholder.com/300x200?text=After+5",
+    before: "https://picsum.photos/500?random=8",
+    after: "https://picsum.photos/500?random=9",
   },
   {
-    before: "https://via.placeholder.com/300x200?text=Before+6",
-    after: "https://via.placeholder.com/300x200?text=After+6",
+    before: "https://picsum.photos/500?random=10",
+    after: "https://picsum.photos/500?random=11",
   },
-  // Add more photo objects as needed
 ];
 
 export default function Gallery() {
@@ -37,6 +36,7 @@ export default function Gallery() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            entry.target.classList.remove("gallery-hidden");
             entry.target.classList.add("gallery-visible");
             observer.unobserve(entry.target);
           }
@@ -45,11 +45,18 @@ export default function Gallery() {
       { threshold: 0.2 }
     );
 
-    refs.current.forEach((el) => {
-      if (el) observer.observe(el);
-    });
+    const timeoutId = setTimeout(() => {
+      refs.current.forEach((el) => {
+        if (el) {
+          observer.observe(el);
+        }
+      });
+    }, 1000);
 
-    return () => observer.disconnect();
+    return () => {
+      clearTimeout(timeoutId);
+      observer.disconnect();
+    };
   }, []);
 
   return (

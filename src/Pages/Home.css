@@ -56,7 +56,7 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.home-services-container h3 {
+.home-services-container p {
   margin-bottom: 12px;
   color: #444;
   font-weight: 500;
@@ -64,32 +64,14 @@
   padding-left: 10px;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-}
-
-.service-card {
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-  .home-about-contact-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .home-container {
   }
 
   .home-about-container,
-  .home-logo-contact-container,
+  .home-logo-container,
   .home-services-container {
-    width: 100%;
   }
 
   .home-logo {

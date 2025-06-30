@@ -18,7 +18,7 @@ export default function Home() {
       <div className="home-services-container">
         <h1>Our Services</h1>
         {services.map((service, index) => (
-          <h3 key={index}>{service}</h3>
+          <p key={index}>{service}</p>
         ))}
       </div>
     </div>
