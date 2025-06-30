@@ -1,23 +1,24 @@
-import './App.css';
-import Navbar from './Components/Navbar';
-import Home from './Pages/Home';
-import Gallery from './Pages/Gallery';
-import Service from './Pages/Service';
-import Contact from './Pages/Contact';
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
+import Gallery from "./Pages/Gallery";
+import Service from "./Pages/Service";
+import Contact from "./Pages/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   const queryParams = new URLSearchParams(window.location.search);
-  const page = queryParams.get('page') || 'home';
+  const page = queryParams.get("page") || "home";
 
   let Content;
   switch (page) {
-    case 'gallery':
+    case "gallery":
       Content = Gallery;
       break;
-    case 'service':
+    case "service":
       Content = Service;
       break;
-    case 'contact':
+    case "contact":
       Content = Contact;
       break;
     default:
@@ -26,11 +27,11 @@ function App() {
 
   return (
     <>
-    <Navbar page={page} />
+      <Navbar page={page} />
       <main>
         <Content />
       </main>
-
+      <Footer />
     </>
   );
 }

@@ -5,7 +5,7 @@ export default function Navbar({ page }) {
   const links = [
     { label: "Home", page: "home" },
     { label: "Gallery", page: "gallery" },
-    { label: "Service Information", page: "service" },
+    { label: "Services", page: "service" },
     { label: "Contact Us", page: "contact" },
   ];
 

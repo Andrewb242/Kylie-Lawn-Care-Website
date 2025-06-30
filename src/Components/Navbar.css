@@ -1,37 +1,89 @@
+/* Base styles */
 .nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
-    width: 35%;
-    padding-bottom: 3px;
+  width: 35%;
+  max-width: 300px;
+  min-width: 150px;
+  padding-bottom: 3px;
 }
 
 .nav-links-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 0px 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 22px;
+  flex-wrap: wrap;
 }
 
 .nav-link {
-   font-size: 22px; 
-   font-family: loto;
-   text-decoration: none;
-   color: black;
-   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  font-size: clamp(0.8rem, 1.75vw, 1.2rem);
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-link.active {
-    color: #727D73;
+  color: #727d73;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
-    color: #AAB99A;
-    cursor: pointer;
+  text-decoration: underline;
+  color: #aab99a;
+  cursor: pointer;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links-container {
+    border-top: 2px solid #777;
+    justify-content: flex-start;
+    padding: 10px 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .nav-logo {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    align-self: flex-start;
+    border-left: 5px solid #aab99a;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .nav-logo {
+    width: 80%;
+  }
+
+  .nav-links-container {
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    padding: 5px 0;
+  }
 }

@@ -1,0 +1,33 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 5%;
+}
+
+.gallery-photo-pair {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.gallery-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation classes */
+.gallery-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.gallery-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
