@@ -13,9 +13,11 @@
   align-items: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-
+/*
+<img className="home-logo" src="logo-square.svg" alt="Logo Square" />
 .home-logo-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 80vw;
@@ -30,9 +32,17 @@
 }
 
 .home-logo {
-  min-width: 100%;
-  max-height: 100%;
+  min-width: 80%;
+  max-height: 80%;
   aspect-ratio: 1 / 1;
+}
+*/
+.home-slogan-container h1 {
+  text-align: center;
+  font-size: 3.7rem;
+  color: white;
+  padding: 5px 40px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* About section */
@@ -45,33 +55,15 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Services section */
-.home-services-container {
-  margin: 40px 5%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 30px;
-  padding-top: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.home-services-container p {
-  margin-bottom: 12px;
-  color: #444;
-  font-weight: 500;
-  border-left: 5px solid #aab99a;
-  padding-left: 10px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .home-container {
+@media (max-width: 1080px) {
+  .home-slogan-container h1 {
+    font-size: 2.75rem;
   }
+}
 
-  .home-about-container,
-  .home-logo-container,
-  .home-services-container {
+@media (max-width: 768px) {
+  .home-slogan-container h1 {
+    font-size: 2.5rem;
   }
 
   .home-logo {

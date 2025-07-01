@@ -1,3 +1,18 @@
 {
-    "services": ["Mowing", "Edging", "Mulch or Stone Installation", "Weed Control", "Leaf Removal", "Hedge Trimming", "Seasonal Cleanups", "Leaf Raking/Removal", "Dethatching", "Flowers and Shrubs", "Fertilization", "Snow Removal", "Garden Bed Cleanup", "Flowerbed Installation and Removal (Bed Tear out and Site Restoration)"]
+  "services": [
+    "Mowing",
+    "Edging",
+    "Mulch or Stone Installation",
+    "Weed Control",
+    "Hedge Trimming",
+    "Seasonal Cleanups",
+    "Leaf Raking/Removal",
+    "Dethatching",
+    "Flowers and Shrubs",
+    "Fertilization",
+    "Snow Removal",
+    "Garden Bed Cleanup",
+    "Flowerbed Installation and Removal (Bed Tear out and Site Restoration)"
+  ],
+  "serviceArea": "We proudly serve State College, Bellefonte, Boalsburg, and surrounding areas in Centre County, PA."
 }

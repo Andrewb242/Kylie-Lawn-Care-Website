@@ -1,0 +1,18 @@
+/* Services section */
+.service-container {
+  margin: 40px 5%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  padding-top: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-s-container p {
+  margin-bottom: 12px;
+  color: #444;
+  font-weight: 500;
+  border-left: 5px solid #aab99a;
+  padding-left: 10px;
+}
