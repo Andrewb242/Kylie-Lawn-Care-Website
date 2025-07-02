@@ -5,19 +5,20 @@
   font-family: loto;
 }
 
+/* Header */
 .contact-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.contact-title {
+.contact-header h1 {
   font-size: 2.5rem;
   color: #727d73;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-.contact-subtitle {
+.contact-header p {
   font-size: 1.1rem;
   color: #777;
   margin: 0;
@@ -28,8 +29,9 @@
   gap: 2rem;
 }
 
+/* Contaict Info Section */
 .contact-info-section {
-  background: #f8f9fa;
+  background: white;
   padding: 1.5rem;
   border-radius: 8px;
   border-left: 4px solid #aab99a;
@@ -37,8 +39,11 @@
 
 .contact-section-title {
   font-size: 1.5rem;
-  color: #727d73;
   margin-bottom: 1rem;
+}
+
+.contact-info-section a {
+  color: #777;
 }
 
 .contact-email {
@@ -46,6 +51,7 @@
   color: #555;
 }
 
+/* Form Section */
 .contact-form {
   background: white;
   padding: 2rem;
@@ -87,6 +93,7 @@
   min-height: 100px;
 }
 
+/* Service Grid */
 .contact-services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -118,6 +125,7 @@
   color: #333;
 }
 
+/* Submit Button */
 .contact-submit-button {
   width: 100%;
   padding: 1rem 2rem;

@@ -63,10 +63,8 @@ Selected Services: ${formData.selectedServices.join(", ")}
   return (
     <div className="contact-page-container">
       <div className="contact-header">
-        <h1 className="contact-title">Contact Us</h1>
-        <p className="contact-subtitle">
-          Get in touch for your lawn care needs
-        </p>
+        <h1>Contact Us</h1>
+        <p>Get in touch for your lawn care needs</p>
       </div>
 
       <div className="contact-content">
