@@ -5,7 +5,6 @@ import "./Contact.css";
 
 export default function Contact() {
   const email = "salawncare31@gmail.com";
-  const phone = "814-441-3179";
   const { services } = serviceData;
 
   const [formData, setFormData] = useState({
